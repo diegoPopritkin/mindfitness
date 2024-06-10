@@ -1,0 +1,14 @@
+@use '@angular/material' as mat;
+@use './m3-theme.scss' as theme;
+
+@include mat.core();
+
+html {
+  // Apply the light theme by default
+  @include mat.core-theme(theme.$light-theme);
+  @include mat.button-theme(theme.$light-theme);
+}
+
+.c2d-btn {
+  @include mat.button-color(theme.$dark-theme, $color-variant: secondary);
+}
