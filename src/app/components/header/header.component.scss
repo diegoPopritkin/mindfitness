@@ -1,0 +1,14 @@
+nav {
+    display: flex;
+    cursor: pointer;
+}
+
+mat-icon {
+    justify-self: flex-start;
+    margin-right: 1rem;
+}
+
+span {
+    display: block;
+    justify-self: center;
+}
