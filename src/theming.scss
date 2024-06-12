@@ -7,6 +7,11 @@ html {
   // Apply the light theme by default
   @include mat.core-theme(theme.$light-theme);
   @include mat.button-theme(theme.$light-theme);
+  @include mat.card-theme(theme.$light-theme);
+  @include mat.form-field-theme(theme.$light-theme);
+  @include mat.input-theme(theme.$light-theme);
+  @include mat.select-theme(theme.$light-theme);
+  @include mat.radio-theme(theme.$light-theme);
 }
 
 .c2d-btn {
