@@ -14,6 +14,12 @@ export const routes: Routes = [
                 .then(m => m.FormComponent)
     },
     {
+        path: 'error',
+        loadComponent: () =>
+            import('./pages/error/error.component')
+                .then(m => m.ErrorComponent)
+    },
+    {
         path: '',
         pathMatch: 'full',
         redirectTo: 'start'
