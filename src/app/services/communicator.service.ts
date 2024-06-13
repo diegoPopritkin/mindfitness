@@ -10,7 +10,7 @@ export class CommunicatorService {
     private http: HttpClient,
   ) { }
 
-  url = "https://webhook-test.com/dcb3a244237e694d93d9ba0ff87d1f55";
+  url = "https://webhook-test.com/887b053d179d696e0b66ac98782ff6af";
 
   public getStates() {
     return this.http.post(this.url, {});
