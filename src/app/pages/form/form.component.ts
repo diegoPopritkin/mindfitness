@@ -55,7 +55,7 @@ export class FormComponent implements OnInit{
             this.states = response?.data;
         },
         error: (error) => {
-          console.error(error);
+          throw new Error(error);
       }
     }); 
   }
