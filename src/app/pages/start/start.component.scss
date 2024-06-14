@@ -1,0 +1,30 @@
+@use '@angular/material' as mat;
+@use './../../../m3-theme.scss' as theme;
+
+.main-container {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("https://www.druni.es/blog/wp-content/uploads/2021/09/diferencia-entre-perfume-y-colonia-800x427.jpg");
+    background-size: cover;
+    color: mat.get-theme-color(theme.$light-theme, 'primary', 30);
+    text-align: center;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 8rem;
+    margin: 0;
+}
+h3 {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin: 0;
+}
+button {
+    height: 3rem;
+}
