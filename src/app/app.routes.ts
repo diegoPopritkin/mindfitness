@@ -9,6 +9,12 @@ export const routes: Routes = [
                 .then(m => m.StartComponent)
     },
     {
+        path: 'form',
+        loadComponent: () =>
+            import('./pages/form/form.component')
+                .then(m => m.FormComponent)
+    },
+    {
         path: '',
         pathMatch: 'full',
         redirectTo: 'start'
