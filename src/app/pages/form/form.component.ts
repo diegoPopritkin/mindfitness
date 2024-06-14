@@ -21,13 +21,12 @@ import { HeaderComponent } from '../../components/header/header.component';
     MatRadioModule,
     MatCardModule,
     ReactiveFormsModule,
-    HeaderComponent
+    HeaderComponent,
   ]
 })
 export class FormComponent {
   private fb = inject(FormBuilder);
   addressForm = this.fb.group({
-    company: null,
     firstName: [null, Validators.required],
     lastName: [null, Validators.required],
     address: [null, Validators.required],
